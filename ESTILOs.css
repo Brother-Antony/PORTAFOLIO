@@ -1183,17 +1183,16 @@ footer .social a:hover {
         background-color: #fcfcfc;
         width: 100%;
         min-height: 80rem;
-        left: 0px;
+        left: -100%;
         top: 57px;
         padding: 15px;
         border-top: 1px solid #eeeeee;
         border-bottom: 1px solid #eeeeee;
-        animation: fixHeaderLeft .5s ease;
-        display: none;
+        transition: .5s;
     }
     
     .navbar.show {
-        display: block;
+        left: 0;
     }
     
     header .navbar ul li {
