@@ -1003,16 +1003,17 @@ header .navbar ul li a.active::before {
 }
 
 .contact-us .contact-form .button a {
-    border-radius: 4px;
-    color: #fcfcfc;
+    outline: none;
+    border: 2px solid #000;
+    border-radius: 20px;
+    color: #000;
     padding: 12px 25px;
-    text-decoration: none;
+    cursor: pointer;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
     transition: all .5s ease;
-    background-color: #febd01;
-    box-shadow: 0px 10px 15px #e8e8e8;
+    background: transparent;
 }
 
 .contact-us .contact-form .button a:hover {
