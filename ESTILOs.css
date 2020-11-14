@@ -1003,7 +1003,7 @@ header .navbar ul li a.active::before {
 }
 
 .contact-us .contact-form .button a {
-    outline: none;
+    text-decoration: none;
     border: 2px solid #000;
     border-radius: 20px;
     color: #000;
