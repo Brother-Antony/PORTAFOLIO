@@ -60,9 +60,9 @@ header {
 }
 
 header.fixed {
-    background-color: #fcfcfc;
+    background-color: #dcd4dc;
     position: fixed;
-    border-color: #eeeeee;
+    border-color: #333;
     animation: fixHeader .5s ease;
 }
 
@@ -1165,7 +1165,7 @@ footer .social a:hover {
     header {
         padding: 13px;
         position: fixed;
-        background-color: #fcfcfc;
+        background-color: #dcd4dc;
         border: none;
         border-bottom: 1px solid #eeeeee;
     }
@@ -1181,7 +1181,7 @@ footer .social a:hover {
     
     .navbar {
         position: absolute;
-        background-color: #fcfcfc;
+        background-color: #dcd4dc;
         width: 100%;
         min-height: 80rem;
         left: -100%;
