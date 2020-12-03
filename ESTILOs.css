@@ -247,7 +247,7 @@ header .navbar ul li a.active::before {
 /* sobre mi */
 .about-me {
     padding: 100px 15px;
-    background-color: #fcfcfc;
+    background-color: #f4f4f4;
 }
 
 .align-items-center {
@@ -858,7 +858,7 @@ header .navbar ul li a.active::before {
 /*Blogs*/
 .blogs {
     padding: 100px 15px;
-    background-color: #fcfcfc;
+    background-color: #f4f4f4;
 }
 
 .blogs .section-title h1:before {
