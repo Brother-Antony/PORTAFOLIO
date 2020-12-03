@@ -65,6 +65,24 @@ header.fixed {
     border-color: #333;
     animation: fixHeader .5s ease;
 }
+header.fixed .logos {
+    display: none;
+}
+
+header.fixed .logo {
+    display: block;
+    width: 130px;
+    transition: .5s ease;
+}
+
+.logo {
+    display: none;
+}
+
+.logos {
+    display: block;
+    width: 120px;
+}
 
 @keyframes fixHeader {
     0% {
@@ -80,6 +98,7 @@ header .row {
     align-items: center;
 }
 
+/*
 header .brand-name a {
     text-decoration: none;
     font-size: 22px;
@@ -92,6 +111,7 @@ header .brand-name a {
 header.fixed .brand-name a {
     color: #000;
 }
+*/
 
 header .navbar ul {
     list-style: none;
