@@ -1190,9 +1190,18 @@ footer .social a:hover {
         border-bottom: 1px solid #eeeeee;
     }
     
-    header .brand-name a {
+    /*header .brand-name a {
         color: #333;
         font-size: 19px;
+    }*/
+
+    header .brand .logo {
+        width: 120px;
+        display: block;
+    }
+    
+    header .brand .logos {
+        display: none;
     }
     
     .ham-burger .fa {
