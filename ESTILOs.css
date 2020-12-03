@@ -60,7 +60,7 @@ header {
 }
 
 header.fixed {
-    background-color: #ececec;
+    background-color: #f4f4f4;
     position: fixed;
     border-color: #333;
     animation: fixHeader .5s ease;
@@ -1165,13 +1165,13 @@ footer .social a:hover {
     header {
         padding: 13px;
         position: fixed;
-        background-color: #dcd4dc;
+        background-color: #f4f4f4;
         border: none;
         border-bottom: 1px solid #eeeeee;
     }
     
     header .brand-name a {
-        color: #000;
+        color: #333;
         font-size: 19px;
     }
     
@@ -1181,7 +1181,7 @@ footer .social a:hover {
     
     .navbar {
         position: absolute;
-        background-color: #ececec;
+        background-color: #f4f4f4;
         width: 100%;
         min-height: 80rem;
         left: -100%;
