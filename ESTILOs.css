@@ -65,23 +65,28 @@ header.fixed {
     border-color: #333;
     animation: fixHeader .5s ease;
 }
-header.fixed .logos {
+
+header.fixed .brand .logos {
     display: none;
 }
 
-header.fixed .logo {
+header.fixed .brand .logo {
     display: block;
     width: 130px;
     transition: .5s ease;
 }
 
-.logo {
+header .brand .logo {
     display: none;
 }
 
 .logos {
     display: block;
     width: 120px;
+}
+
+header .brand {
+    position: relative;
 }
 
 @keyframes fixHeader {
