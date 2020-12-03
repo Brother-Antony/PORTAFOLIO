@@ -115,7 +115,7 @@ header .navbar ul li a {
 }
 
 header.fixed .navbar ul li a {
-    color: #000;
+    color: #333;
 }
 
 header .navbar ul li a::before {
@@ -284,7 +284,8 @@ header .navbar ul li a.active::before {
 }
 
 .about-me .about-content .text h6 span {
-    color: #febd01;
+    /*color: #febd01;*/
+    color: #cc0000;
 }
 
 .about-me .about-content .text p {
