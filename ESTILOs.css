@@ -215,7 +215,7 @@ header .navbar ul li a.active::before {
 
 .home .home-content .block .cv-btn a:hover {
     background-color: #fcfcfc;
-    color: #000;
+    color: #333;
 }
 
 
@@ -273,19 +273,18 @@ header .navbar ul li a.active::before {
     font-size: 25px;
     font-weight: 600;
     margin: 0 0 5px;
-    color: #000000;
+    color: #333;
 }
 
 .about-me .about-content .text h6 {
     font-size: 18px;
     font-weight: 500;
     margin: 0 0 15px;
-    color: #000000;
+    color: #333;
 }
 
 .about-me .about-content .text h6 span {
-    /*color: #febd01;*/
-    color: #cc0000;
+    color: #febd01;
 }
 
 .about-me .about-content .text p {
@@ -314,7 +313,7 @@ header .navbar ul li a.active::before {
 
 .about-me .about-content .text .info label {
     padding-right: 10px;
-    color: #000000;
+    color: #333;
     font-weight: 600;
     font-size: 15px;
 }
@@ -330,10 +329,10 @@ header .navbar ul li a.active::before {
 .about-me .about-content .text .social-links a {
     height: 30px;
     width: 30px;
-    background-color: #000000;
+    background-color: #333;
     border-radius: 3px;
     display: inline-block;
-    border: 1px solid #000000;
+    border: 1px solid #333;
     line-height: 28px;
     text-align: center;
     margin: 0 1px;
@@ -354,7 +353,7 @@ header .navbar ul li a.active::before {
 }
 
 .about-me .about-content .text .social-links a:hover .fa {
-    color: #000000;
+    color: #333;
 }
 
 
