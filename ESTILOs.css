@@ -60,7 +60,7 @@ header {
 }
 
 header.fixed {
-    background-color: #fcfcfc;
+    background-color: #f4f4f4;
     position: fixed;
     border-color: #eeeeee;
     animation: fixHeader .5s ease;
