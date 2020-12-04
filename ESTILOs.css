@@ -882,6 +882,12 @@ header .navbar ul li a.active::before {
 
 .blogs .blogs-content .box .img {
     overflow: hidden;
+    border-radius: 2%;
+}
+
+.blogs .blogs-content .box .img:hover {
+    box-shadow: 6px 6px 30px #d1d9e6;
+    background-color: #f8f8f8;
 }
 
 .blogs .blogs-content .box .img img {
@@ -915,6 +921,7 @@ header .navbar ul li a.active::before {
     color: #000;
     margin: 0 0 10px;
     padding: 0;
+    transition: all .5s ease;
 }
 
 .blogs .blogs-content .box:hover h3 {
