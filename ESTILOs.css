@@ -883,6 +883,7 @@ header .navbar ul li a.active::before {
 .blogs .blogs-content .box .img {
     overflow: hidden;
     border-radius: 2%;
+    transition: all .5s ease;
 }
 
 .blogs .blogs-content .box .img:hover {
