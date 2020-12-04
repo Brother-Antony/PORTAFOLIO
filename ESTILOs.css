@@ -404,7 +404,7 @@ header .navbar ul li a.active::before {
 }
 
 .services .service-content .box {
-    background-color: #f8f8f8;
+    background-color: #fcfcfc;
     padding: 30px;
     flex: 0 0 calc(33.33% - 20px);
     max-width: calc(33.33% - 20px);
@@ -1260,7 +1260,7 @@ footer .social a:hover {
     }
     
     .services .service-content .box {
-        background-color: #fff;
+        /*background-color: #fff;*/
         padding: 30px;
         flex: 0 0 100%;
         max-width: 100%;
