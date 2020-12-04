@@ -226,9 +226,9 @@ header .navbar ul li a.active::before {
 }
 
 .home .home-content .block .cv-btn a {
-    border-radius: 4px;
-    color: #fcfcfc;
-    border: 1px solid #fcfcfc;
+    border-radius: 5px;
+    color: #f8f8f8;
+    border: 2px solid #f8f8f8;
     padding: 12px 25px;
     text-decoration: none;
     display: inline-block;
@@ -239,7 +239,7 @@ header .navbar ul li a.active::before {
 }
 
 .home .home-content .block .cv-btn a:hover {
-    background-color: #fcfcfc;
+    background-color: #f8f8f8;
     color: #333;
 }
 
