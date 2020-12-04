@@ -386,7 +386,8 @@ header .navbar ul li a.active::before {
 
 /* servicio */
 .services {
-    background-color: #f5f8fd;
+    /*background-color: #f5f8fd;*/
+    background-color: #ecf0f3;
     padding: 100px 15px 70px;
 }
 
