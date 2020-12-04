@@ -60,7 +60,7 @@ header {
 }
 
 header.fixed {
-    background-color: #f4f4f4;
+    background-color: #f8f8f8;
     position: fixed;
     border-color: #eeeeee;
     animation: fixHeader .5s ease;
@@ -247,7 +247,7 @@ header .navbar ul li a.active::before {
 /* sobre mi */
 .about-me {
     padding: 100px 15px;
-    background-color: #f4f4f4;
+    background-color: #f8f8f8;
 }
 
 .align-items-center {
@@ -404,7 +404,7 @@ header .navbar ul li a.active::before {
 }
 
 .services .service-content .box {
-    background-color: #fcfcfc;
+    background-color: #f8f8f8;
     padding: 30px;
     flex: 0 0 calc(33.33% - 20px);
     max-width: calc(33.33% - 20px);
@@ -467,7 +467,7 @@ header .navbar ul li a.active::before {
 /* Skills */
 .skills {
     padding: 100px 15px;
-    background-color: #fcfcfc;
+    background-color: #f8f8f8;
 }
 
 .skills .skills-content {
@@ -534,7 +534,7 @@ header .navbar ul li a.active::before {
 
 /* portafolio */
 .portfolio {
-    background-color: #f5f8fd;
+    background-color: #ecf0f3;
     padding: 100px 7px;
 }
 
@@ -778,7 +778,7 @@ header .navbar ul li a.active::before {
 /*Testimoniales*/
 .testimonials {
     padding: 100px 0px;
-    background-color: #f5f8fd;
+    background-color: #ecf0f3;
 }
 
 .testimonials .section-title h1:before {
@@ -859,7 +859,7 @@ header .navbar ul li a.active::before {
 /*Blogs*/
 .blogs {
     padding: 100px 15px;
-    background-color: #f4f4f4;
+    background-color: #f8f8f8;
 }
 
 .blogs .section-title h1:before {
@@ -953,7 +953,7 @@ header .navbar ul li a.active::before {
 /*Contacto*/
 .contact-us {
     padding: 100px 15px;
-    background-color: #f5f8fd;
+    background-color: #ecf0f3;
 }
 
 .contact-us .section-title h1:before {
@@ -961,7 +961,7 @@ header .navbar ul li a.active::before {
 }
 
 .contact-us .contact-form {
-    background-color: #fcfcfc;
+    background-color: #f8f8f8;
     flex: 0 0 100%;
     max-width: 100%;
     padding: 50px;
@@ -1191,7 +1191,7 @@ footer .social a:hover {
     header {
         padding: 5px 10px;
         position: fixed;
-        background-color: #f4f4f4;
+        background-color: #f8f8f8;
         border: none;
         border-bottom: 1px solid #eeeeee;
     }
@@ -1216,7 +1216,7 @@ footer .social a:hover {
     
     .navbar {
         position: absolute;
-        background-color: #f4f4f4;
+        background-color: #f8f8f8;
         width: 100%;
         min-height: 80rem;
         left: -100%;
