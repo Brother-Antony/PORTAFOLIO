@@ -55,6 +55,7 @@ header {
     left: 0px;
     right: 0px;
     border-bottom: 1px solid #423940;
+    transition: all .5s ease;
     padding: 0px 15px;
     z-index: 10;
 }
