@@ -515,7 +515,8 @@ header .navbar ul li a.active::before {
 }
 
 .skills .skills-content .skill-box .skill-bar .skill-bar-in {
-    background-color: #febd01;
+    /*background-color: #febd01;*/
+    background: linear-gradient(90deg, rgba(255,185,0,1) 0%, rgba(255,105,0,1) 31%, rgba(255,66,0,1) 65%, rgba(255,0,0,1) 100%);
     position: absolute;
     left: 0;
     top: 0;
