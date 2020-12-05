@@ -1042,7 +1042,7 @@ header .navbar ul li a.active::before {
     max-width: 100%;
 }
 
-.contact-us .contact-form .button a {
+.contact-us .contact-form .button button {
     text-decoration: none;
     border: 2px solid #000;
     border-radius: 20px;
@@ -1056,7 +1056,7 @@ header .navbar ul li a.active::before {
     background: transparent;
 }
 
-.contact-us .contact-form .button a:hover {
+.contact-us .contact-form .button button:hover {
     background-color: #000;
     color: #fcfcfc;
 }
