@@ -695,6 +695,7 @@ header .navbar ul li a.active::before {
     bottom: 0;
     z-index: 100;
     background-color: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
     justify-content: center;
     align-items: center;
 }
