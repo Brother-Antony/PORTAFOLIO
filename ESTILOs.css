@@ -888,7 +888,7 @@ header .navbar ul li a.active::before {
     transition: all .5s ease;
 }
 
-.blogs .blogs-content .box .img:hover {
+.blogs .blogs-content .box:hover .img {
     box-shadow: 6px 6px 30px #d1d9e6;
     background-color: #f8f8f8;
 }
