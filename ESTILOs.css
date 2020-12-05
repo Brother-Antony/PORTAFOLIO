@@ -564,10 +564,11 @@ header .navbar ul li a.active::before {
     text-transform: uppercase;
     cursor: pointer;
     padding-bottom: 0px;
+    transition: all .5s ease;
 }
 
 .portfolio .filter-buttons ul li.active {
-    color: #000;
+    color: #333;
     /*border-bottom: 2px solid #000;*/
 }
 
