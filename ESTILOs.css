@@ -362,8 +362,8 @@ header .navbar ul li a.active::before {
     line-height: 28px;
     text-align: center;
     margin: 0 1px;
-    /*-webkit-transition: all .5s ease;
-    transition: all .5s ease;*/
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
 }
 
 .about-me .about-content .text .social-links a:hover {
@@ -375,7 +375,7 @@ header .navbar ul li a.active::before {
     margin-top: 9px;
     font-size: 12px;
     -webkit-transition: all .5s ease;
-    transition: all .5s ease;
+    /*transition: all .5s ease;*/
 }
 
 .about-me .about-content .text .social-links a:hover .fa {
