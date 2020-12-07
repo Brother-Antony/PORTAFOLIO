@@ -975,6 +975,8 @@ header .navbar ul li a.active::before {
 
 .contact-us .contact-form {
     background-color: #f8f8f8;
+    box-shadow: 6px 6px 30px #d1d9e6;
+    background-color: #f8f8f8;
     flex: 0 0 100%;
     max-width: 100%;
     padding: 50px;
