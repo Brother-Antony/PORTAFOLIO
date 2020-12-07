@@ -585,7 +585,7 @@ header .navbar ul li a.active::before {
 }
 
 .portfolio-gallery {
-    opacity: 1;
+    opacity: 0;
     transition: opacity .5s linear 1s;
 }
 
