@@ -362,7 +362,7 @@ header .navbar ul li a.active::before {
     line-height: 28px;
     text-align: center;
     margin: 0 1px;
-    -webkit-transition: all .5s ease;
+    /*-webkit-transition: all .5s ease;*/
     transition: all .5s ease;
 }
 
