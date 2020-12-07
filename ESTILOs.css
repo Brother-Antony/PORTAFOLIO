@@ -236,6 +236,7 @@ header .navbar ul li a.active::before {
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
+    -webkit-transition: all .5s ease;
     transition: all .5s ease;
 }
 
@@ -375,7 +376,7 @@ header .navbar ul li a.active::before {
     margin-top: 9px;
     font-size: 12px;
     -webkit-transition: all .5s ease;
-    /*transition: all .5s ease;*/
+    transition: all .5s ease;
 }
 
 .about-me .about-content .text .social-links a:hover .fa {
