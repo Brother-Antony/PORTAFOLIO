@@ -1307,6 +1307,7 @@ footer .social a:hover {
         flex: 0 0 100%;
         max-width: 100%;
         text-align: center;
+        justify-content: center ;
     }
     
     .message-text .button {
