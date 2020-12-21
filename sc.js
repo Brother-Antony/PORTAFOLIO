@@ -151,7 +151,7 @@ window.onload = load();
 window.onscroll = function() {
     const docScrollTop = document.documentElement.scrollTop;
     
-    if (window.innerWidth > 900) {
+    if (window.innerWidth > 780) {
         if(docScrollTop > 100) {
             document.querySelector("header").classList.add("fixed");
         }
