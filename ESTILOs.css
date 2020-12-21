@@ -178,17 +178,6 @@ header .navbar ul li a.active::before {
     padding: 15px;
 }
 
-.home:after {
-    content: '';
-    position: absolute;
-    bottom: -30px;
-    left: 0;
-    width: 100%;
-    height: 400px;
-    z-index: 1;
-    background: linear-gradient(to top,#111,transparent);
-}
-
 .home .full-screen {
     min-height: 100vh;
 }
