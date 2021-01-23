@@ -262,7 +262,7 @@ header .navbar ul li a.active::before {
 }
 
 .home .home-content .block h1:after {
-    content: '</h1>';
+    content: '<h1/>';
     font-family: 'La Belle Aurore', cursive;
     color: #515152;
     font-size: 15px;
@@ -541,7 +541,7 @@ header .navbar ul li a.active::before {
     height: 60px;
     width: 60px;
     /*background: #323232;*/
-    /*background-color: #f8f8f87a;*/
+    background-color: #f8f8f87a;
     margin: 15px auto 20px;
     border-radius: 50%;
     text-align: center;
@@ -686,7 +686,7 @@ header .navbar ul li a.active::before {
 
 .skills .skills-content .skill-box .skill-bar .skill-bar-in {
     /*background-color: #febd01;*/
-    background-color: #d64e29;
+    background-color: #FFB100;
     /*background: linear-gradient(90deg, rgba(255,185,0,1) 0%, rgba(255,105,0,1) 31%, rgba(255,66,0,1) 65%, rgba(255,0,0,1) 100%);
     box-shadow: 6px 6px 30px rgba(255,0,0,1);*/
     position: absolute;
@@ -695,7 +695,7 @@ header .navbar ul li a.active::before {
     height: 100%;
 }
 
-.skills .skills-content .skill-box .skill-bar .skill-css {
+/*.skills .skills-content .skill-box .skill-bar .skill-css {
     background-color: #0e6cb7;
 }
 
@@ -705,7 +705,7 @@ header .navbar ul li a.active::before {
 
 .skills .skills-content .skill-box .skill-bar .skill-xd {
     background-color: #450035;
-}
+}*/
 
 .skills .skills-content .skill-box .skill-bar .skill-bar-in span {
     color: #838383;
