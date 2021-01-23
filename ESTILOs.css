@@ -262,7 +262,7 @@ header .navbar ul li a.active::before {
 }
 
 .home .home-content .block h1:after {
-    content: '<h1/>';
+    content: '</h1>';
     font-family: 'La Belle Aurore', cursive;
     color: #515152;
     font-size: 15px;
