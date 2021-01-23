@@ -541,7 +541,7 @@ header .navbar ul li a.active::before {
     height: 60px;
     width: 60px;
     /*background: #323232;*/
-    background-color: #f8f8f87a;
+    /*background-color: #f8f8f87a;*/
     margin: 15px auto 20px;
     border-radius: 50%;
     text-align: center;
