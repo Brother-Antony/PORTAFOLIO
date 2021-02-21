@@ -522,7 +522,7 @@ header .navbar ul li a.active::before {
 }
 
 .services .service-content .javas:hover::before {
-    background-color: #dfc01c;
+    background-color: #2f2f2f;
 }
 
 .services .service-content .git:hover::before {
