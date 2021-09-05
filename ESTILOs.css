@@ -2,6 +2,12 @@
 @import url(https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap);
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --colorFondo: #F5F5F5;
+    --colorFondoGris: #E8EBEC;
+    --colorCeleste:  #1C89FC;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -11,9 +17,24 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+body::-webkit-scrollbar {
+    width: 14px;
+    background-color: #ecf0f3;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--colorCeleste);
+    border: 3px solid #ecf0f3;
+    border-radius: 12px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 h1,
@@ -66,7 +87,7 @@ label {
     position: absolute;
     height: 2px;
     right: 30%;
-    background-color: #febd01;
+    background-color: var(--colorCeleste);
     bottom: 0px;
 }
 
@@ -81,7 +102,9 @@ header {
 }
 
 header.fixed {
-    background-color: #f8f8f8;
+    /*background-color: #f8f8f8;*/
+    background-color: rgb(232 235 236 / 82%);
+    backdrop-filter: saturate(180%) blur(25px);
     /*background-color: #f8f8f8ba;
     backdrop-filter: saturate(180%) blur(25px);*/
     position: fixed;
@@ -159,10 +182,11 @@ header .navbar ul li a {
     -webkit-font-smoothing: antialiased;
     text-decoration: none;
     line-height: 72px;
-    color: #dcdde0;
+    color: rgba(117, 117, 117, 1);
     display: block;
     font-weight: 500;
     position: relative;
+    transition: all .5s ease;
 }
 
 header.fixed .navbar ul li a {
@@ -172,7 +196,7 @@ header.fixed .navbar ul li a {
 header .navbar ul li a::before {
     content: '';
     height: 3px;
-    background-color: #dcdde0;
+    background-color: rgb(37, 37, 37);
     width: 0%;
     position: absolute;
     right: 0px;
@@ -181,12 +205,20 @@ header .navbar ul li a::before {
 }
 
 header.fixed .navbar ul li a::before {
-    background-color: #febd01;
+    background-color: var(--colorCeleste);
+}
+
+header .navbar ul li a:hover {
+    color: rgba(0, 0, 0, 1);
 }
 
 header .navbar ul li a:hover::before {
     width: 100%;
     left: 0;
+}
+
+header .navbar ul li a.active {
+    color: rgba(0, 0, 0, 1);
 }
 
 header .navbar ul li a.active::before {
@@ -198,17 +230,30 @@ header .navbar ul li a.active::before {
 .home {
     cursor: default;
     min-height: 100vh;
-    /*background-image: url(https://fsb.zobj.net/crop.php?r=2luErWc-U-3JEoYziDcNS4kncfDoQTu-FrrQLebQtI6wzMZzQ9tyUa9-WjYuW3TVAx7iH4IP7ptIG7Oi1-t1mM_eBeSz7g36Yf0qjtz7QaueR1-HXp8dRd5j6RgjfKzpTlH3q6liPngFeEBP);*/
-    background-image: url();
-    background: #1d1d1d;
-    background-attachment: fixed;
+    /*background-image: url(https://justsayingmum.files.wordpress.com/2016/08/photo-1449247709967-d4461a6a6103.jpeg);*/
+    /*background: #1d1d1d;*/
+    background-color: var(--colorFondo);
+   /* background-attachment: fixed;*/
     background-size: cover;
     background-position: center;
+    overflow: hidden;
     padding: 15px;
+    position: relative;
+}
+
+.home:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(232 235 236 / 75%);
+    backdrop-filter: saturate(180%) blur(25px);
+    position: absolute;
 }
 
 /*.home:after {
-        content: "";
+    content: "";
     display: block;
     position: absolute;
     width: 100%;
@@ -229,15 +274,40 @@ header .navbar ul li a.active::before {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    position: relative;
+}
+
+.home .home-content:before {
+    content: "";
+    position: absolute;
+    width: 230px;
+    height: 160px;
+    transform: rotate(45deg);
+    top: -30px;
+    border-radius: 50%;
+    background-color: #71D9EF;
+}
+
+.home .home-content:after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    bottom: 45px;
+    right: -150px;
+    border-radius: 50%;
+    background-color: #949fc3;
+    box-shadow: 0px 0px 18px #949fc3;;
 }
 
 .home .home-content .block {
     flex: 0 0 75%;
     max-width: 75%;
     padding-left: 26px;
-    border-left: 5px solid #fcfcfc;
+    border-left: 5px solid rgb(37, 37, 37);
     border-radius: 2px;
     margin-top: 76px;
+    z-index: 1;
 }
 
 /*.home .home-content .block h6 {
@@ -248,8 +318,22 @@ header .navbar ul li a.active::before {
     padding: 0;
 }*/
 
+.home .home-content .block span {
+    color: var(--colorCeleste);
+}
+
+.home .home-content .block i {
+    margin-left: 1px;
+    color: var(--colorFondo);
+    transition: all .5s ease;
+}
+
+.home .home-content .block a:hover i {
+    margin-left: 5px;
+}
+
 .home .home-content .block h1 {
-    color: #fcfcfc;
+    color: rgb(37, 37, 37);
     font-size: 52px;
     /*font-weight: 800;*/
     line-height: 56px;
@@ -258,10 +342,10 @@ header .navbar ul li a.active::before {
     padding: 0;
 }
 
-.home .home-content .block h1:before {
+/*.home .home-content .block h1:before {
     content: '<h1>';
     font-family: 'La Belle Aurore', cursive;
-    color: #515152;
+    color: rgb(37, 37, 37);
     font-size: 15px;
     position: absolute;
     margin-top: -40px;
@@ -269,14 +353,14 @@ header .navbar ul li a.active::before {
 }
 
 .home .home-content .block h1:after {
-    content: '<h1/>';
+    content: '</h1>';
     font-family: 'La Belle Aurore', cursive;
-    color: #515152;
+    color: rgb(37, 37, 37);
     font-size: 15px;
     position: absolute;
     margin-top: 10px;
     margin-left: 18px;
-}
+}*/
 
 .home .home-content .block h3 {
     /*color: #8d8d8d;
@@ -284,24 +368,24 @@ header .navbar ul li a.active::before {
     font-weight: 500;
     margin: 0;
     padding: 0;*/
-    color: #8d8d8d;
+    color: rgb(51 51 51);
     margin-top: 15px;
     font-weight: normal;
-    font-size: 11px;
+    font-size: 12px;
     font-family: "Open Sans", sans-serif;
     letter-spacing: 3px;
 }
 
 .home .home-content .block a {
-    color: #08fdd8;
+    color: #f1f1f1;
     font-size: 16px;
     font-weight: 700;
     /*font-family: 'Londrina Solid', cursive;*/
     font-family: "Open Sans", sans-serif;
-    text-decoration: none;
     padding: 10px 30px;
     cursor: pointer;
-    border: 2px solid #08fdd8;
+    border: 2px solid var(--colorCeleste);
+    background-color: var(--colorCeleste);
     border-radius: 15px;
     margin-top: 32px;
     float: left;
@@ -310,8 +394,8 @@ header .navbar ul li a.active::before {
 }
 
 .home .home-content .block a:hover {
-    color: #000;
-    box-shadow: 0 0 0 2em #08fdd8 inset;
+    background-color: #147be8;
+    box-shadow: 0px 3px 20px #3c8fe6;
 }
 
 
@@ -319,7 +403,8 @@ header .navbar ul li a.active::before {
 .about-me {
     cursor: default;
     padding: 100px 15px;
-    background-color: #f8f8f8;
+    /*background-color: #f8f8f8;*/
+    background-color: var(--colorFondo);
 }
 
 .about-me:after {
@@ -393,7 +478,8 @@ header .navbar ul li a.active::before {
 }
 
 .about-me .about-content .text h6 span {
-    color: #febd01;
+    font-weight: 600;
+    color: var(--colorCeleste);
 }
 
 .about-me .about-content .text p {
@@ -470,8 +556,8 @@ header .navbar ul li a.active::before {
 
 /* servicio */
 .services {
-    /*background-color: #f5f8fd;*/
-    background-color: #ecf0f3; 
+    /*background-color: #ecf0f3;*/
+    background-color: var(--colorFondoGris);
     padding: 100px 15px 70px;
 }
 
@@ -509,7 +595,6 @@ header .navbar ul li a.active::before {
     content: '';
     height: 2px;
     background-color: #8e8e8e;
-    border-radius: 100px;
     position: absolute;
     bottom: 0px;
     width: 50px;
@@ -549,7 +634,7 @@ header .navbar ul li a.active::before {
     width: 60px;
     /*background: #323232;*/
     margin: 15px auto 20px;
-    border-radius: 50%;
+    border-radius: 15px;
     text-align: center;
     transition: all .5s ease;
 }
@@ -642,7 +727,7 @@ header .navbar ul li a.active::before {
 .skills {
     cursor: default;
     padding: 100px 15px;
-    background-color: #f8f8f8;
+    background-color: var(--colorFondo);
 }
 
 .skills .skills-content {
@@ -686,21 +771,21 @@ header .navbar ul li a.active::before {
 }
 
 .skills .skills-content .skill-box .skill-bar {
-    height: 14px;
+    height: 17px;
     border-radius: 18px;
-    border: 1px solid #dededeb8;
-    background-color: #eeeeee;
+    border: 2px solid #e8e8e8;
+    background-color: #f5f5f5;
     position: relative;
 }
 
 .skills .skills-content .skill-box .skill-bar .skill-bar-in {
     /*background-color: #febd01;*/
-    background-color: #FFB100;
+    background-color: var(--colorCeleste);
     /*background: linear-gradient(90deg, rgba(255,185,0,1) 0%, rgba(255,105,0,1) 31%, rgba(255,66,0,1) 65%, rgba(255,0,0,1) 100%);
     box-shadow: 6px 6px 30px rgba(255,0,0,1);*/
     position: absolute;
     border-radius: 18px;
-    border: 1px solid #eeeeee;
+    border: 2px solid #f5f5f5;
     left: 0;
     top: 0;
     height: 100%;
@@ -731,7 +816,7 @@ header .navbar ul li a.active::before {
 
 /* portafolio */
 .portfolio {
-    background-color: #ecf0f3;
+    background-color: var(--colorFondoGris);
     padding: 100px 7px;
 }
 
@@ -756,19 +841,26 @@ header .navbar ul li a.active::before {
     font-size: 16px;
     display: inline-block;
     margin: 0px 8px;
+    border-radius: 18px;
     text-transform: uppercase;
     cursor: pointer;
     padding-bottom: 0px;
-    transition: all .5s ease;
+    transition: all .3s ease;
 }
 
 .portfolio .filter-buttons ul li.active {
-    color: #333;
+    color: #f1f1f1;
+    padding: 7px 17px;
+    border-radius: 18px;
+    background-color: var(--colorCeleste);
     /*border-bottom: 2px solid #000;*/
 }
 
 .portfolio .filter-buttons ul li:hover {
-    color: #333333b5;
+    color: #f1f1f1;
+    padding: 7px 17px;
+    border-radius: 18px;
+    background-color: var(--colorCeleste);
 }
 
 .portfolio .filter-buttons {
@@ -806,22 +898,24 @@ header .navbar ul li a.active::before {
 .portfolio .portfolio-gallery .item img {
     width: 100%;
     display: block;
-    border-radius: 10px;
+    border-radius: 18px;
+    border: 1px solid rgb(51 51 51 / 18%);
 }
 
 .portfolio .portfolio-gallery .item .overlay {
     position: absolute;
+    cursor: default;
     left: 0;
     top: 0;
     bottom: 0;
     right: 0;
-    border: 1px solid #bdbdbd;
+    border: 1px solid rgb(0 0 0 / 22%);
     box-shadow: 0 0 32px -8px #464646;
     /*background-color: #e0dfe07a;*/
-    background-color: rgba(255,255,255,.72);
+    background-color: rgba(227, 232, 234, .75);
     backdrop-filter: saturate(180%) blur(25px);
     z-index: 1;
-    border-radius: 10px;
+    border-radius: 18px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -835,41 +929,78 @@ header .navbar ul li a.active::before {
     opacity: 1;
 }
 
-.portfolio .portfolio-gallery .item .overlay .fas {
-    height: 50px;
-    width: 50px;
-    /*background-color: #febd01;
-    color: #fcfcfc;*/
-    background-color: #3b3938;
-    color: #dbdde0;
-    display: inline-block;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 50%;
+.portfolio .portfolio-gallery .item .overlay a {
+    border: 2px solid #3b3938;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 5px 20px;
+    color: #3b3938;
+    border-radius: 8px;
     cursor: pointer;
     transition: all .5s ease;
 }
 
-.portfolio .portfolio-gallery .item .overlay .fas:hover {
-    /*background-color: #dcb953;
-    box-shadow: 2px 5px 30px #dcb953;*/
-    background-color: #5d5c5b;
-    box-shadow: 2px 5px 30px #797979;
+.portfolio .portfolio-gallery .item .overlay a:hover {
+    box-shadow: 0 0 0 2em #3b3938 inset;
+    color: #f1f1f1;
 }
 
-.portfolio .portfolio-gallery .item .overlay a .fal, .fas, .fad, .far, .fad {
-    color: #ebebeb;
-    margin-top: 10px;
-    font-size: 30px;
+.portfolio .portfolio-gallery .item .overlay a .fas {
+    color: #3b3938;
+    margin-right: 8px;
+    font-size: 15px;
     transition: all .5s ease;
 }
 
-.portfolio .portfolio-gallery .item:hover .overlay .fas {
+.portfolio .portfolio-gallery .item .overlay a:hover .fas {
+    color: #f1f1f1;
+}
+
+.portfolio .portfolio-gallery .item:hover .overlay a {
     -webkit-animation: galleryIcon .8s ease;
     animation: galleryIcon .8s ease;
 }
 
 @keyframes galleryIcon {
+    0%{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.portfolio .portfolio-gallery .item .overlay h4 {
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: 'Mulish', sans-serif;
+    padding-bottom: 5px;
+    font-size: 23px;
+    color: #3b3938;
+    font-weight: 900;
+    position: relative;
+}
+
+.portfolio .portfolio-gallery .item .overlay h4:before {
+    content: '';
+    left: 32%;
+    position: absolute;
+    height: 2px;
+    right: 32%;
+    border-radius: 15px;
+    background-color: #333;
+    bottom: 0px;
+}
+
+.portfolio .portfolio-gallery .item:hover .overlay h4 {
+    -webkit-animation: galleryText .8s ease;
+    animation: galleryText .8s ease;
+}
+
+@keyframes galleryText {
     0%{
         transform: translateY(-20px);
         opacity: 0;
@@ -880,22 +1011,21 @@ header .navbar ul li a.active::before {
     }
 }
 
-.portfolio .portfolio-gallery .item .overlay h4 {
-    margin-top: 15px;
-    font-size: 25px;
+.portfolio .portfolio-gallery .item .overlay p {
+    font-size: 14px;
     color: #3b3938;
-    font-weight: 600;
-    cursor: default;
+    padding: 10px 0;
+    letter-spacing: .5px;
 }
 
-.portfolio .portfolio-gallery .item:hover .overlay h4 {
-    -webkit-animation: galleryText .8s ease;
-    animation: galleryText .8s ease;
+.portfolio .portfolio-gallery .item:hover .overlay p {
+    -webkit-animation: galleryP .8s ease;
+    animation: galleryP .8s ease;
 }
 
-@keyframes galleryText {
+@keyframes galleryP {
     0%{
-        transform: translateY(20px);
+        transform: scale(1.5);
         opacity: 0;
     }
     100%{
@@ -1313,7 +1443,7 @@ header .navbar ul li a.active::before {
 /*Contacto*/
 .contact-us {
     padding: 100px 15px;
-    background-color: #ecf0f3;
+    background-color: var(--colorFondoGris);
 }
 
 .contact-us .section-title h1:before {
@@ -1561,12 +1691,13 @@ footer .social a:hover {
     }
 }
 @media only screen and (max-width: 795px) {
+
     .hide-desktop {
         display: inline-block;
     }
 
     .ham-burger {
-        display: inline-block;
+        /*display: inline-block;*/
     }
 
     .skills .skills-content .section-title h1 {
@@ -1607,17 +1738,17 @@ footer .social a:hover {
     }
     
     header {
-        padding: 5px 10px;
+        padding: 7px 5px;
         position: fixed;
-        background-color: #f8f8f8;
+        background-color: rgb(232 235 236 / 82%);
+        backdrop-filter: saturate(180%) blur(25px);
         border: none;
-        border-bottom: 1px solid #eeeeee;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.02);
     }
-    
-    /*header .brand-name a {
-        color: #333;
-        font-size: 19px;
-    }*/
+
+    header .brand {
+        margin: auto;
+    }
 
     header .brand .logo {
         margin-left: 0px;
@@ -1635,7 +1766,7 @@ footer .social a:hover {
     
     .navbar {
         position: absolute;
-        background-color: #f8f8f8;
+        background-color: var(--colorFondo);
         /*background-color: rgb(255 255 255 / 78%);
         backdrop-filter: saturate(180%) blur(50px);*/
         width: 100%;
@@ -1664,17 +1795,22 @@ footer .social a:hover {
         text-align: center;
         transform: translateY(250%);
         color: #000;
-        background-color: #e8e8e8;
         transition: all .5s ease;
     }
 
     header .navbar ul li a:hover {
-        background-color: #cecbce;
+        background-color: #e8e8e8;
     }
     
     header .navbar ul li a::before {
         /*background-color: #febd01;*/
         display: none;
+    }
+
+    header .navbar ul li a.active {
+        transition: all 1s ease;
+        background-color: #151515;
+        color: #f8f8f8;
     }
 
     .about-me {
@@ -1767,7 +1903,7 @@ footer .social a:hover {
     }
 }
 
-@media only screen and (max-width: 509px) {
+@media only screen and (max-width: 522px) {
     .about-me .about-content .text .info .list {
         flex-flow: column;
         border-bottom: none;
@@ -1809,9 +1945,9 @@ footer .social a:hover {
         max-width: 100%;
      }
     
-    .about-me .about-content .text .info .list p {
+    /*.about-me .about-content .text .info .list p {
         flex: 0 0 100%;
-    }
+    }*/
     
     .testimonials .testimonials-content .testi-slider .slide {
         text-align: center;
