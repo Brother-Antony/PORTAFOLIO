@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    /*background-image: url(img/antony.png);*/
+    background-color: #f1f1f1;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.nav_ux {
+    display: none;
+}
+
+@media only screen and (max-width: 795px) {
+    .nav_ux {
+        position: fixed;
+        bottom: 25px;
+        width: 100%;
+        height: 65px;
+        display: flex;
+        justify-content: center;
+        z-index: 122;
+    }
+
+    .nav__block_ux {
+        display: flex;
+        width: 445px;
+        border-radius: 20px;
+        border: 1px solid #ffffff36;
+        background-color: rgb(232 235 236 / 70%);
+        backdrop-filter: saturate(180%) blur(20px);
+        box-shadow: 0px 0px 30px #00000012;
+    }
+
+    .nav_ux .nav__block_ux li {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        min-width: 50px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    /*----- PUNTO DE ACCESSO ICONS -----*/
+    .nav__block_ux li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav__block_ux li a::before {
+        content: '';
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        bottom: 3px;
+        background-color: black;
+        border-radius: 50%;
+        transition: all .3s ease-in-out;
+    }
+
+    .nav__block_ux li a:hover::before {
+        width: 5px;
+        height: 5px;
+    }
+
+    .nav__block_ux li a.active::before {
+        width: 5px;
+        height: 5px;
+    }
+
+
+    /*----- ICONOS -----*/
+    path {
+        transition: all .3s ease-in-out;
+    }
+
+    .nav_ux .nav__block_ux li a path {
+        fill: #093ec8;
+    }
+
+    .nav_ux .nav__block_ux li a:hover path {
+        fill: black;
+    }
+
+    .nav_ux .nav__block_ux li a.active path {
+        fill: black;
+    }
+}
+
