@@ -8,7 +8,8 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="ESTILOs.css">
-       
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+
     <!-- Favicon icono de barra -->
     <link rel="shortcut icon" href="https://i.ibb.co/vQW4SkV/20201205-202037.png" />
 
@@ -30,7 +31,7 @@
                 </div>-->
                 <div class="brand">
                     <a href="https://brother-antony.github.io/PORTAFOLIO/">
-                       <img class="logos" src="img/logo-blanco.png">
+                       <img class="logos" src="img/logo-negro.png">
                        <img class="logo" src="img/logo-negro.png">
                     </a>
                 </div>
@@ -44,10 +45,10 @@
                 </div>
                 <div class="navbar">
                     <ul>
-                        <li><a href="#home" class="active">Inicio</a></li>
-                        <li><a href="#about">Sobre Mí</a></li>
-                        <li><a href="#services">Servicios</a></li>
-                        <li><a href="#portfolio">Proyectos</a></li>
+                        <li><a href="#inicio" class="inicio active">Inicio</a></li>
+                        <li><a href="#perfil" class="perfil">Sobre Mí</a></li>
+                        <li><a href="#servicio" class="servicio">Servicios</a></li>
+                        <li><a href="#portafolio" class="portafolio">Proyectos</a></li>
                         <!-- <li><a href="#blogs">Blog</a></li> -->
                     </ul>
                 </div>
@@ -55,21 +56,69 @@
         </div>
     </header>
     <!-- end header -->
+
+    <!-- start header ux -->
+    <nav class="nav_ux">
+        <div class="nav__block_ux">
+            <li>
+                <a href="#inicio" class="inicio active">
+                    <svg width="32px" height="32px" viewBox="0 0 96.000000 96.000000">
+                        <g transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                            <path d="M310 755 c-91 -73 -161 -136 -172 -156 -16 -29 -18 -61 -18 -250 0 -266 -11 -249 152 -249 150 0 148 -2 148 148 l0 112 60 0 60 0 0 -113 c0 -149 -2 -147 152 -147 99 0 117 3 131 18 25 27 25 427 1 478 -17 36 -320 285 -346 283 -7 0 -83 -56 -168 -124z m278 -27 c58 -46 125 -101 149 -124 l43 -41 0 -201 0 -202 -90 0 -90 0 0 105 c0 99 -2 107 -25 130 -21 22 -33 25 -95 25 -62 0 -74 -3 -95 -25 -23 -23 -25 -31 -25 -130 l0 -105 -90 0 -90 0 0 200 0 200 28 30 c23 26 261 218 271 220 2 0 51 -37 109 -82z" />
+                        </g>    
+                    </svg>
+                </a>
+            </li>
+
+            <li>
+                <a href="#perfil" class="perfil icon_user">
+                    <svg width="32px" height="32px" viewBox="0 0 96.000000 96.000000">
+                        <g transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                            <path d="M410 867 c-78 -25 -140 -129 -127 -212 14 -87 65 -144 150 -166 147 -40 279 98 237 248 -31 107 -147 166 -260 130z m138 -67 c42 -26 72 -76 72 -120 0 -44 -30 -94 -72 -120 -117 -71 -259 71 -188 188 26 42 76 72 120 72 19 0 50 -9 68 -20z"/>
+                            <path d="M185 375 c-19 -18 -25 -35 -25 -70 0 -137 121 -220 320 -220 112 0 189 21 245 68 73 60 99 174 50 222 l-24 25 -271 0 -271 0 -24 -25z m549 -87 c0 -58 -24 -86 -97 -119 -44 -20 -69 -23 -157 -23 -88 0 -113 3 -157 23 -64 28 -92 58 -100 104 -11 70 -22 68 259 65 l253 -3 -1 -47z"/>
+                        </g>
+                    </svg>
+                </a>
+            </li>
+
+            <li>
+                <a href="#servicio" class="servicio icon_service">
+                    <svg width="32px" height="32px" viewBox="0 0 96.000000 96.000000">
+                        <g transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                            <path d="M515 870 c-11 -5 -112 -101 -225 -214 l-205 -206 0 -50 0 -50 133 -132 132 -133 50 0 50 0 212 213 213 212 3 150 3 151 -34 34 -35 35 -138 -1 c-77 0 -148 -4 -159 -9z m293 -62 c8 -8 12 -54 12 -142 l0 -130 -198 -198 c-148 -149 -204 -198 -222 -198 -34 0 -260 226 -260 260 0 18 49 74 198 222 l198 198 130 0 c88 0 134 -4 142 -12z"/>
+                            <path d="M640 720 c-11 -11 -20 -29 -20 -40 0 -11 9 -29 20 -40 11 -11 29 -20 40 -20 11 0 29 9 40 20 11 11 20 29 20 40 0 11 -9 29 -20 40 -11 11 -29 20 -40 20 -11 0 -29 -9 -40 -20z"/>
+                        </g>
+                    </svg>
+                </a>
+            </li>
+            
+            <li>
+                <a href="#portafolio" class="portafolio icon_love">
+                    <svg width="32px" height="32px" viewBox="0 0 96.000000 96.000000">
+                        <g transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                            <path d="M236 810 c-89 -27 -156 -120 -156 -215 0 -45 41 -122 101 -192 66 -75 285 -283 299 -283 6 0 63 50 128 110 216 205 280 297 269 391 -13 108 -88 183 -197 196 -41 5 -59 1 -104 -21 -31 -15 -65 -39 -76 -53 l-20 -26 -20 26 c-45 57 -150 89 -224 67z m131 -67 c20 -9 47 -34 62 -54 42 -61 60 -61 102 0 88 126 284 70 284 -82 0 -43 -6 -61 -37 -107 -42 -62 -278 -300 -298 -300 -20 0 -256 237 -295 296 -40 60 -49 92 -41 139 18 96 132 152 223 108z"/>
+                        </g>
+                    </svg>
+                </a>
+            </li>
+        </div>
+    </nav>
+    <!-- end header ux -->
     
     <!-- start Inicio -->
-    <section class="home" id="home">
+    <section class="home" id="inicio">
         <div class="container">
             <div class="row full-screen">
                 <div class="home-content">
                     <div class="block">
                         <!-- <h6>Hola, Mi Nombre es</h6> -->
-                        <h1>Hola, <br>Soy Antony, <br>web developer.</h1>
+                        <h1>Hola, <br>Soy <span>Antony</span>, <br>web developer.</h1>
                         <h3>Frontend And Developer</h3>
                         <!-- <div class="cv-btn">
                             <a>Contáctame!</a>
                         </div> -->
                         <div class="block-a">
-                            <a href="#contact">Contáctame</a>
+                            <a href="#contact">Contáctame <i class="far fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -77,9 +126,9 @@
         </div>
     </section>
     <!-- end Inicio -->
-    
+
     <!-- start about -->
-    <section class="about-me" id="about">
+    <section class="about-me" id="perfil">
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -124,7 +173,7 @@
     <!-- end about -->
     
     <!-- start servicio -->
-    <section class="services" id="services">
+    <section class="services" id="servicio">
         <div class="container">
             <div class ="row">
                 <div class="section-title text-center">
@@ -182,7 +231,7 @@
     <!-- end servicio -->
     
     <!-- skills -->
-    <section class="skills">
+    <section class="skills" id="servicio">
         <div class="container">
             <div class="row align-items-center">
                 <div class="skills-content">
@@ -236,7 +285,7 @@
     <!-- end skills -->
     
     <!-- portafolio -->
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio" id="portafolio">
         <div class="container">
             <div class="row">
                 <div class="section-title text-center">
@@ -269,10 +318,11 @@
                         <div class="inner">
                             <img src="https://i.ibb.co/Rp6LC9q/20200924-123418.png" alt="portfolio">
                             <div class="overlay">
+                                <h4>Tienda Online</h4>
+                                <p>HTML - CSS - JS</p>
                                 <a href="https://rockantony.000webhostapp.com/Tienda%20Online/index.php" target="_blank">
-                                    <span class="fas fa-globe"></span>
+                                    <span class="fas fa-external-link-alt"></span>Vér Página
                                 </a>
-                                <h4>Web</h4>
                             </div>
                         </div>
                     </div>
@@ -280,32 +330,47 @@
                         <div class="inner">
                             <img src="https://i.ibb.co/PTSt6DW/20210122-212730.jpg">
                             <div class="overlay">
+                                <h4>Poster</h4>
+                                <p>HTML - CSS</p>
                                 <a href="https://brother-antony.github.io/post/" target="_blank">
-                                    <span class="fas fa-globe"></span>
+                                    <span class="fas fa-external-link-alt"></span>Vér Página
                                 </a>
-                                <h4>Web</h4>
                             </div>
                         </div>
                     </div>
                     <div class="item" data-id="branding">
                         <div class="inner">
-                            <img src="https://i.ibb.co/WFm8rKt/20200924-131230.png" alt="portfolio">
+                            <img src="img/web-kid.png" alt="portfolio">
                             <div class="overlay">
-                                <a href="https://rockantony.000webhostapp.com/MI%20APP/index.html" target="_blank">
-                                    <span class="fas fa-globe"></span>
-                                </a>
                                 <h4>Diseño</h4>
+                                <p>ILUSTRATOR - ADOBE XD</p>
+                                <a href="https://xd.adobe.com/view/75901132-dd08-4292-86dc-3a5b59faa5c8-20c3/" target="_blank">
+                                    <span class="fas fa-external-link-alt"></span>Vér Página
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="item" data-id="diseño">
                         <div class="inner">
-                            <img href="https://brother-antony.github.io/Practica/" src="https://i.ibb.co/r6yW8Nz/Fondo.jpg" alt="guitar">
+                            <img src="img/web-guitar.png" alt="guitar">
                             <div class="overlay">
-                                <a href="https://brother-antony.github.io/Practica/" target="_blank">
-                                    <span class="fas fa-globe"></span>
-                                </a>
                                 <h4>Web</h4>
+                                <p>HTML - CSS - JS</p>
+                                <a href="https://brother-antony.github.io/Practica/" target="_blank">
+                                    <span class="fas fa-external-link-alt"></span>Vér Página
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="branding">
+                        <div class="inner">
+                            <img src="img/antony-diseño.png" alt="guitar">
+                            <div class="overlay">
+                                <h4>Diseño</h4>
+                                <p>ILUSTRATOR - ADOBE XD</p>
+                                <a href="https://xd.adobe.com/view/199089e0-f6eb-4e36-aa7c-027e513c54bd-4cc3/" target="_blank">
+                                    <span class="fas fa-external-link-alt"></span>Vér Página
+                                </a>
                             </div>
                         </div>
                     </div>
