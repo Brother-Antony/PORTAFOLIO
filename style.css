@@ -296,27 +296,25 @@ header .navbar ul li a.active::before {
     bottom: 45px;
     right: -150px;
     border-radius: 50%;
-    background-color: #949fc3;
+    background-color: rgba(148, 159, 195, 0.67);
     box-shadow: 0px 0px 18px #949fc3;;
 }
 
 .home .home-content .block {
-    flex: 0 0 75%;
-    max-width: 75%;
-    padding-left: 26px;
-    border-left: 5px solid rgb(37, 37, 37);
-    border-radius: 2px;
+    flex: 0 0 100%;
+    max-width: 100%;
     margin-top: 76px;
+    text-align: center;
     z-index: 1;
 }
 
-/*.home .home-content .block h6 {
-    color: #dcdde0;
-    font-size: 18px;
-    font-weight: 500;
+.home .home-content .block h6 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
     margin: 0;
     padding: 0;
-}*/
+}
 
 .home .home-content .block span {
     color: var(--colorCeleste);
@@ -334,11 +332,13 @@ header .navbar ul li a.active::before {
 
 .home .home-content .block h1 {
     color: rgb(37, 37, 37);
-    font-size: 52px;
-    /*font-weight: 800;*/
+    font-size: 65px;
+    font-weight: 800;
     line-height: 56px;
-    font-family: 'Londrina Solid', cursive;
-    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin: 13px 0;
+    /*font-family: 'Londrina Solid', cursive;*/
     padding: 0;
 }
 
@@ -363,31 +363,29 @@ header .navbar ul li a.active::before {
 }*/
 
 .home .home-content .block h3 {
-    /*color: #8d8d8d;
-    font-size: 25px;
-    font-weight: 500;
-    margin: 0;
-    padding: 0;*/
     color: rgb(51 51 51);
-    margin-top: 15px;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 15px;
     font-family: "Open Sans", sans-serif;
     letter-spacing: 3px;
+}
+
+.home .home-content .block .block-a {
+    display: flex;
+    justify-content: center;
 }
 
 .home .home-content .block a {
     color: #f1f1f1;
     font-size: 16px;
     font-weight: 700;
-    /*font-family: 'Londrina Solid', cursive;*/
     font-family: "Open Sans", sans-serif;
     padding: 10px 30px;
     cursor: pointer;
     border: 2px solid var(--colorCeleste);
     background-color: var(--colorCeleste);
-    border-radius: 15px;
-    margin-top: 32px;
+    border-radius: 18px;
+    margin-top: 40px;
     float: left;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
@@ -447,8 +445,8 @@ header .navbar ul li a.active::before {
 }
 
 .about-me .about-content .img {
-    flex: 0 0 20.33%;
-    max-width: 33.33%;
+    flex: 0 0 25%;
+    max-width: 25%;
 }
 
 .about-me .about-content .img img {
@@ -458,8 +456,8 @@ header .navbar ul li a.active::before {
 }
 
 .about-me .about-content .text {
-    flex: 0 0 79.66%;
-    max-width: 79.66%;
+    flex: 0 0 75%;
+    max-width: 75%;
     padding-left: 30px;
 }
 
@@ -1680,11 +1678,36 @@ footer .social a:hover {
     }
 }
 
+
+@media only screen and (max-width: 1033px) {
+    .about-me .about-content .img {
+        flex: 0 0 33%;
+        max-width: 33%;
+    }
+
+    .about-me .about-content .text {
+        flex: 0 0 67%;
+        max-width: 67%;
+    }
+}
+
 /*====== Footer ======*/
 @media only screen and (max-width: 950px) {
     .portfolio .portfolio-gallery .item {
         flex: 0 0 47%;
         max-width: 47%;
+    }
+}
+
+@media only screen and (max-width: 878px) {
+    .about-me .about-content .img {
+        flex: 0 0 37%;
+        max-width: 37%;
+    }
+
+    .about-me .about-content .text {
+        flex: 0 0 63%;
+        max-width: 63%;
     }
 }
 
@@ -1708,26 +1731,6 @@ footer .social a:hover {
     }
 
     .skills .skills-content .section-title p {
-        text-align: center;
-    }
-
-    .home .home-content .block {
-        padding-left: 0;
-        border-left: none;
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-
-    .home .home-content .block .block-a {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .home .home-content .block h1 {
-        text-align: center;
-    }
-    
-    .home .home-content .block h3 {
         text-align: center;
     }
     
@@ -1901,6 +1904,21 @@ footer .social a:hover {
     }
 }
 
+@media only screen and (max-width: 570px) {
+    .home .home-content .block h6 {
+        font-size: 17px;
+    }
+
+    .home .home-content .block h1 {
+        font-size: 54px;
+        margin: 8px 0;
+    }
+
+    .home .home-content .block h3 {
+        font-size: 14px;
+    }
+}
+
 @media only screen and (max-width: 522px) {
     .about-me .about-content .text .info .list {
         flex-flow: column;
@@ -1958,6 +1976,13 @@ footer .social a:hover {
     
     .testimonials .testimonials-content .testi-slider .slide {
         flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 466px) {
+    .home .home-content .block h1 {
+        font-size: 44px;
+        margin: 6px 0;
     }
 }
 
