@@ -189,10 +189,6 @@ header .navbar ul li a {
     transition: all .5s ease;
 }
 
-header.fixed .navbar ul li a {
-    color: #000;
-}
-
 header .navbar ul li a::before {
     content: '';
     height: 3px;
