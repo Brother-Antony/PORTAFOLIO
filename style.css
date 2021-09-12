@@ -1685,7 +1685,7 @@ footer .social a:hover {
     }
 
     .skills {
-        padding: 100px 30px;
+        padding: 100px 20px;
     }
 
     .skills .skills-content:nth-child(3) {
@@ -1819,12 +1819,6 @@ footer .social a:hover {
         flex: 0 0 100%;
         max-width: 100%;
         padding-right: 0px;
-    }
-    
-    .skills .img {
-        flex: 0 0 90%;
-        max-width: 90%;
-        margin: auto;
     }
   
     .message-text .text {
