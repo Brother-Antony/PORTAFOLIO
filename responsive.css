@@ -81,16 +81,16 @@ nav {
 
 
     /*----- ICONOS -----*/
-    path {
+    g {
         transition: all .3s ease-in-out;
     }
 
-    nav .nav__block_ux li a path {
-        fill: #093ec8;
+    nav .nav__block_ux li a g {
+        stroke: #093ec8;
     }
 
-    nav .nav__block_ux li a.active path {
-        fill: black;
+    nav .nav__block_ux li a.active g {
+        stroke: black;
     }
 
     nav .nav__block_ux li a.active .far {
