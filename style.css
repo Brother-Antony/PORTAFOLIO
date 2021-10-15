@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap);
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
 
 :root {
     --colorFondo: #F5F5F5;
@@ -113,9 +114,9 @@ header.fixed {
     animation: fixHeader .5s ease;
 }
 
-header.fixed .brand .logos {
+/*header.fixed .brand .logos {
     display: none;
-}
+}*/
 
 header.fixed .brand .logo {
     display: block;
@@ -130,11 +131,22 @@ header .brand .logo {
 
 .logos {
     display: block;
-    width: 120px;
+    /*width: 120px;*/
+    width: 32px;
+    border-radius: 50%;
+    margin-right: 4px;
 }
 
-header .brand {
+header .brand a {
     position: relative;
+    align-items: center;
+    display: flex;
+}
+
+header .brand span {
+    font-size: 21px;
+    color: #1f1f1f;
+    font-weight: 600;
 }
 
 @keyframes fixHeader {
@@ -709,6 +721,83 @@ header .navbar ul li a.active::before {
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.skills .skills-content .skill-box .icon_html {
+    background-color: #FD5721;
+    display: flex;
+    padding: 13px;
+    margin-right: 18px;
+    border-radius: 22px;
+}
+
+.skills .skills-content .skill-box .icon_css {
+    background-color: #35A9DC;
+    display: flex;
+    padding: 13px;
+    margin-right: 18px;
+    border-radius: 22px;
+}
+
+.skills .skills-content .skill-box .icon_sass {
+    background-color: #CD669A;
+    display: flex;
+    padding: 6px;
+    margin-right: 18px;
+    border-radius: 22px;
+}
+
+.skills .skills-content .skill-box .icon_sass img {
+    width: 50px;
+    height: 50px;
+    border-radius: 21px;
+}
+
+.skills .skills-content .skill-box .icon_js {
+    background-color: #F0C82D;
+    display: flex;
+    padding: 13px;
+    margin-right: 18px;
+    border-radius: 22px;
+}
+
+.skills .skills-content .skill-box .icon_xd {
+    background-color: #470337;
+    display: flex;
+    padding: 6px;
+    margin-right: 18px;
+    border-radius: 22px;
+}
+
+.skills .skills-content .skill-box .icon_xd img {
+    width: 50px;
+    height: 50px;
+    border-radius: 21px;
+}
+
+.skills .skills-content .skill-box .icon_ai {
+    background-color: #470337;
+    display: flex;
+    padding: 6px;
+    margin-right: 18px;
+    border-radius: 22px;
+}
+
+.skills .skills-content .skill-box .icon_ai img {
+    width: 50px;
+    height: 50px;
+    border-radius: 21px;
+}
+
+.skills .skills-content .skill-box .block_html_icon,
+.block_css_icon, 
+.block_sass_icon,
+.block_js_icon,
+.block_xd_icon,
+.block_ai_icon {
+    width: 100%;
 }
 
 .skills .section-title h1:before {
@@ -797,6 +886,11 @@ header .navbar ul li a.active::before {
     border-radius: 18px;
     cursor: pointer;
     transition: all .3s ease;
+}
+
+.portfolio .filter-buttons ul li:hover {
+    background: rgba(42, 108, 221, 0.06);
+    color: rgb(0 116 239);
 }
 
 .portfolio .filter-buttons ul li.active {
@@ -1722,7 +1816,7 @@ footer .social a:hover {
     }
     
     header {
-        padding: 7px 5px;
+        padding: 14px 5px;
         position: fixed;
         background-color: rgb(232 235 236 / 82%);
         backdrop-filter: saturate(180%) blur(25px);
@@ -1740,9 +1834,9 @@ footer .social a:hover {
         display: block;
     }
     
-    header .brand .logos {
+    /*header .brand .logos {
         display: none;
-    }
+    }*/
     
     .ham-burger .fa {
         display: inline-block;
