@@ -749,10 +749,12 @@ header .navbar ul li a.active::before {
     border-radius: 22px;
 }
 
-.skills .skills-content .skill-box .icon_sass img {
-    width: 50px;
-    height: 50px;
-    border-radius: 21px;
+.skills .skills-content .skill-box .icon_react {
+    background-color: #262626;
+    display: flex;
+    padding: 6px;
+    margin-right: 18px;
+    border-radius: 22px;
 }
 
 .skills .skills-content .skill-box .icon_js {
@@ -771,12 +773,6 @@ header .navbar ul li a.active::before {
     border-radius: 22px;
 }
 
-.skills .skills-content .skill-box .icon_xd img {
-    width: 50px;
-    height: 50px;
-    border-radius: 21px;
-}
-
 .skills .skills-content .skill-box .icon_ai {
     background-color: #470337;
     display: flex;
@@ -785,7 +781,7 @@ header .navbar ul li a.active::before {
     border-radius: 22px;
 }
 
-.skills .skills-content .skill-box .icon_ai img {
+.skills .skills-content .skill-box .icon_sass img, .icon_react img, .icon_xd img, .icon_ai img {
     width: 50px;
     height: 50px;
     border-radius: 21px;
@@ -794,6 +790,7 @@ header .navbar ul li a.active::before {
 .skills .skills-content .skill-box .block_html_icon,
 .block_css_icon, 
 .block_sass_icon,
+.block_react_icon,
 .block_js_icon,
 .block_xd_icon,
 .block_ai_icon {
