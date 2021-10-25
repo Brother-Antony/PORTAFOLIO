@@ -711,22 +711,65 @@ header .navbar ul li a.active::before {
     margin: 15px 0 0;
 }
 
-.skills .skills-content {
+.skills .section-title h1:before {
+    left: 30%;
+}
+
+/*.skills .skills-content {
     flex: 0 0 50%;
     max-width: 50%;
     padding-right: 12px;
+}*/
+
+.skills .skills-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.skills .skills-content:nth-child(3) {
+/*.skills .skills-content:nth-child(3) {
     padding: 0 0 0 12px;
-}
+}*/
 
-.skills .skills-content .skill-box {
+/*.skills .skills-content .skill-box {
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 30px;
     display: flex;
     align-items: center;
+}*/
+
+/*.skills .skills-content .skill-box {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #f1f1f1;
+    border-radius: 28px;
+    padding: 11px;
+    transition: all .4s ease;
+}*/
+
+.skills .skills-content .skill-box {
+    padding: 7px;
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    background-color: rgb(232 235 236 / 70%);
+    border: 1px solid #dbdbdb;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 28px;
+    transition: all .3s ease;
+}
+
+.skills .skills-content .skill-box:hover {
+    background-color: var(--colorFondoGris);
+    box-shadow: 0px 0px 25px rgb(0 0 0 / 12%);
+    border: 1px solid rgb(0 0 0 / 12%);
 }
 
 .skills .skills-content .skill-box .icon_html {
@@ -801,15 +844,23 @@ header .navbar ul li a.active::before {
     width: 100%;
 }
 
-.skills .section-title h1:before {
+/*.skills .section-title h1:before {
     right: 47%;
-}
+}*/
 
 .skills .skills-content .skill-box h6 {
     font-size: 16px;
     font-weight: 500;
     color: #000;
-    margin: 0 0 8px;
+    /*margin: 0 0 8px;*/
+    margin: 0 0 2px;
+}
+
+.skills .skills-content .skill-box p {
+    color: #747474;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
 }
 
 .skills .skills-content .skill-box .skill-bar {
@@ -1735,6 +1786,18 @@ footer .social a:hover {
     }
 }
 
+@media only screen and (max-width: 1080px) {
+    .skills .skills-content {
+        justify-content: center;
+    }
+
+    .skills .skills-content .skill-box {
+        flex: 0 0 43%;
+        max-width: 43%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
 
 @media only screen and (max-width: 1033px) {
     .about-me .about-content .img {
@@ -1774,6 +1837,14 @@ footer .social a:hover {
         max-width: 100%;*/
         flex: 0 0 50%;
         max-width: 49%;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .skills .skills-content .skill-box {
+        flex: 0 0 60%;
+        max-width: 60%;
+        margin-right: 0;
     }
 }
 
@@ -1919,6 +1990,7 @@ footer .social a:hover {
 
     .about-me .about-content .img img {
         border-radius: 50%;
+        height: 35vw;
         border: 1px solid #4e5e79;
     }
     
@@ -1972,6 +2044,13 @@ footer .social a:hover {
     }
 }
 
+@media only screen and (max-width: 640px) {
+    .skills .skills-content .skill-box {
+        flex: 0 0 70%;
+        max-width: 70%;
+    }
+}
+
 @media only screen and (max-width: 610px) {
     .services .service-content .box {
         flex: 0 0 91%;
@@ -1991,6 +2070,13 @@ footer .social a:hover {
 
     .home .home-content .block h3 {
         font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .skills .skills-content .skill-box {
+        flex: 0 0 90%;
+        max-width: 90%;
     }
 }
 
@@ -2068,33 +2154,6 @@ footer .social a:hover {
     }
 }
 
-/*@media only screen and (max-width: 411px) {
-    .home .home-content .block h6 {
-        font-size: 13px;
-    }
-    
-    .home .home-content .block h1 {
-        font-size: 35px;
-    }
-    
-    .home .home-content .block h3 {
-        font-size: 18px;
-    }
-}
-
-@media only screen and (max-width: 395px) {
-    .home .home-content .block h6 {
-        font-size: 13px;
-    }
-    
-    .home .home-content .block h1 {
-        font-size: 31px;
-    }
-    
-    .home .home-content .block h3 {
-        font-size: 16px;
-    }
-}*/
 
 
 
