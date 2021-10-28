@@ -726,7 +726,8 @@ header .navbar ul li a.active::before {
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    /*justify-content: space-around;*/
 }
 
 /*.skills .skills-content:nth-child(3) {
@@ -760,6 +761,7 @@ header .navbar ul li a.active::before {
     background-color: rgb(232 235 236 / 70%);
     border: 1px solid #dbdbdb;
     margin-bottom: 30px;
+    margin-right: 20px;
     display: flex;
     align-items: center;
     border-radius: 28px;
@@ -828,7 +830,15 @@ header .navbar ul li a.active::before {
     border-radius: 22px;
 }
 
-.skills .skills-content .skill-box .icon_sass img, .icon_react img, .icon_xd img, .icon_ai img {
+.skills .skills-content .skill-box .icon_word {
+    background-color: #00769e;
+    display: flex;
+    padding: 6px;
+    margin-right: 18px;
+    border-radius: 22px;
+}
+
+.skills .skills-content .skill-box .icon_sass img, .icon_react img, .icon_xd img, .icon_ai img, .icon_word img {
     width: 50px;
     height: 50px;
     border-radius: 21px;
@@ -2132,6 +2142,13 @@ footer .social a:hover {
     
     .testimonials .testimonials-content .testi-slider .slide {
         flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .skills .skills-content .skill-box {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
 
