@@ -330,16 +330,6 @@ header .navbar ul li a.active::before {
     color: var(--colorCeleste);
 }
 
-.home .home-content .block i {
-    margin-left: 1px;
-    color: var(--colorFondo);
-    transition: all .5s ease;
-}
-
-.home .home-content .block a:hover i {
-    margin-left: 5px;
-}
-
 .home .home-content .block h1 {
     color: rgb(37, 37, 37);
     font-size: 65px;
@@ -386,11 +376,13 @@ header .navbar ul li a.active::before {
 }
 
 .home .home-content .block a {
+    display: flex;
+    align-items: center;
     color: #f1f1f1;
     font-size: 16px;
     font-weight: 700;
     font-family: "Open Sans", sans-serif;
-    padding: 10px 30px;
+    padding: 10px 33px;
     cursor: pointer;
     border: 2px solid var(--colorCeleste);
     background-color: var(--colorCeleste);
@@ -402,8 +394,23 @@ header .navbar ul li a.active::before {
 }
 
 .home .home-content .block a:hover {
+    padding-right: 44px;
+    padding-left: 22px;
     background-color: #147be8;
     box-shadow: 0px 3px 20px #3c8fe6;
+}
+
+.home .home-content .block i {
+    position: absolute;
+    padding-left: 73px;
+    opacity: 0;
+    color: var(--colorFondo);
+    transition: all .5s ease;
+}
+
+.home .home-content .block a:hover i {
+    opacity: 1;
+    padding-left: 100px;
 }
 
 
@@ -1895,6 +1902,10 @@ footer .social a:hover {
     
     .home .home-content .block a {
         font-size: 15px;
+    }
+
+    .home .home-content .block a:hover i {
+        padding-left: 93px;
     }
     
     header {
