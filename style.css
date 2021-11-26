@@ -768,8 +768,9 @@ header .navbar ul li a.active::before {
     max-width: calc(33.33% - 20px);
     background-color: rgb(232 235 236 / 70%);
     border: 1px solid #dbdbdb;
-    margin-bottom: 30px;
-    margin-right: 20px;
+    /*margin-bottom: 30px;
+    margin-right: 20px;*/
+    margin: 10px;
     display: flex;
     align-items: center;
     border-radius: 28px;
