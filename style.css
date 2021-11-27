@@ -96,7 +96,6 @@ label {
 
 header {
     position: absolute;
-    /*background: #181818;*/
     left: 0px;
     right: 0px;
     transition: all .5s ease;
@@ -130,7 +129,6 @@ header .brand .logo {
 
 .logos {
     display: block;
-    /*width: 120px;*/
     width: 32px;
     border-radius: 50%;
     margin-right: 4px;
@@ -161,21 +159,6 @@ header .row {
     justify-content: space-between;
     align-items: center;
 }
-
-/*
-header .brand-name a {
-    text-decoration: none;
-    font-size: 22px;
-    font-weight: 600;
-    color: #fcfcfc;
-    text-transform: uppercase;
-    position: relative;
-}
-
-header.fixed .brand-name a {
-    color: #000;
-}
-*/
 
 header .navbar ul {
     list-style: none;
@@ -237,17 +220,16 @@ header .navbar ul li a.active::before {
 
 /* home */
 .home {
+    position: relative;
+    overflow: hidden;
     cursor: default;
-    min-height: 100vh;
     /*background-image: url(https://justsayingmum.files.wordpress.com/2016/08/photo-1449247709967-d4461a6a6103.jpeg);*/
-    /*background: #1d1d1d;*/
     background-color: var(--colorFondoGris);
    /* background-attachment: fixed;*/
     background-size: cover;
     background-position: center;
-    overflow: hidden;
     padding: 15px;
-    position: relative;
+    min-height: 100vh;
 }
 
 /*.home:after {
@@ -319,7 +301,7 @@ header .navbar ul li a.active::before {
 
 .home .home-content .block h6 {
     color: #000;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: 600;
     margin: 0;
     padding: 0;
@@ -576,7 +558,6 @@ header .navbar ul li a.active::before {
 
 /* servicio */
 .services {
-    /*background-color: #ecf0f3;*/
     background-color: var(--colorFondoGris);
     padding: 100px 15px 70px;
 }
@@ -591,7 +572,6 @@ header .navbar ul li a.active::before {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /*justify-content: space-between;*/
 }
 
 .services .service-content .box {
@@ -1711,6 +1691,7 @@ footer .logo {
 
 footer .text-footer{
     text-align: center;
+    padding: 0 12px;
     font-size: 15px;
     font-weight: 400;
     padding-top: 1rem;
@@ -1812,15 +1793,10 @@ footer .social a:hover {
 }
 
 @media only screen and (max-width: 1080px) {
-    .skills .skills-content {
-        justify-content: center;
-    }
 
     .skills .skills-content .skill-box {
         flex: 0 0 43%;
         max-width: 43%;
-        margin-right: 20px;
-        margin-bottom: 20px;
     }
 }
 
@@ -1860,6 +1836,18 @@ footer .social a:hover {
         flex: 0 0 47%;
         max-width: 47%;
     }
+
+    .portfolio .portfolio-gallery .item .overlay h4 {
+        font-size: 23px;
+    }
+
+    .portfolio .portfolio-gallery .item .overlay p {
+        font-size: 14px;
+    }
+
+    .portfolio .portfolio-gallery .item .overlay a {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-width: 878px) {
@@ -1887,7 +1875,6 @@ footer .social a:hover {
     .skills .skills-content .skill-box {
         flex: 0 0 60%;
         max-width: 60%;
-        margin-right: 0;
     }
 }
 
@@ -2086,10 +2073,36 @@ footer .social a:hover {
     }
 }
 
+@media only screen and (max-width: 720px) {
+    .portfolio .portfolio-gallery .item .overlay h4 {
+        font-size: 20px;
+    }
+
+    .portfolio .portfolio-gallery .item .overlay p {
+        font-size: 12px;
+    }
+
+    .portfolio .portfolio-gallery .item .overlay a {
+        font-size: 12px;
+    }
+}
+
 @media only screen and (max-width: 670px) {
     .portfolio .portfolio-gallery .item {
         flex: 0 0 68%;
         max-width: 68%;
+    }
+
+    .portfolio .portfolio-gallery .item .overlay h4 {
+        font-size: 23px;
+    }
+
+    .portfolio .portfolio-gallery .item .overlay p {
+        font-size: 14px;
+    }
+
+    .portfolio .portfolio-gallery .item .overlay a {
+        font-size: 14px;
     }
 }
 
